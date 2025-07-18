@@ -15,10 +15,11 @@
 ## Параметры конфигурации
 Перед запуском скрипта проверьте следующие параметры в начале файла:
 ZBX_SERVER = "" (IP-адрес сервера Zabbix)
-ZBX_API = "http://$ZBX_SERVER/zabbix/api_jsonrpc.php" (URL API Zabbix)
-ZBX_TOKEN = "" (API токен)
-ZBX_TEMPLATE_NAME = "Windows by Zabbix agent" (Имя шаблона, можно оставить так)
-ZBX_HOSTGRP_NAME = "Unassigned" (Имя группы хостов (не забудьте создать на сервере или указать другую группу))
+
+- ZBX_API = "http://$ZBX_SERVER/zabbix/api_jsonrpc.php" (URL API Zabbix)
+- ZBX_TOKEN = "" (API токен)
+- ZBX_TEMPLATE_NAME = "Windows by Zabbix agent" (Имя шаблона, можно оставить так)
+- ZBX_HOSTGRP_NAME = "Unassigned" (Имя группы хостов (не забудьте создать на сервере или указать другую группу))
 
 $AGENT_MSI = "\\nas\Distrib\Zabbix\zabbix_agent-7.2.5.msi" # Путь к MSI-файлу агента (проверьте чтобы все целевые ПК имели доступ на выполнение)
 $AGENT_PORT = "10050"  # Порт агента
