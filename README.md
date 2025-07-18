@@ -14,11 +14,11 @@
 
 ## Параметры конфигурации
 Перед запуском скрипта проверьте следующие параметры в начале файла:
-$ZBX_SERVER = "" # IP-адрес сервера Zabbix
-$ZBX_API = "http://$ZBX_SERVER/zabbix/api_jsonrpc.php"  # URL API Zabbix
-$ZBX_TOKEN = ""  # API токен
-$ZBX_TEMPLATE_NAME = "Windows by Zabbix agent"  # Имя шаблона, можно оставить так
-$ZBX_HOSTGRP_NAME = "Unassigned"            # Имя группы хостов (не забудьте создать на сервере или указать другую группу)
+ZBX_SERVER = "" # IP-адрес сервера Zabbix
+ZBX_API = "http://$ZBX_SERVER/zabbix/api_jsonrpc.php"  # URL API Zabbix
+ZBX_TOKEN = ""  # API токен
+ZBX_TEMPLATE_NAME = "Windows by Zabbix agent"  # Имя шаблона, можно оставить так
+ZBX_HOSTGRP_NAME = "Unassigned"            # Имя группы хостов (не забудьте создать на сервере или указать другую группу)
 
 $AGENT_MSI = "\\nas\Distrib\Zabbix\zabbix_agent-7.2.5.msi" # Путь к MSI-файлу агента (проверьте чтобы все целевые ПК имели доступ на выполнение)
 $AGENT_PORT = "10050"  # Порт агента
@@ -44,7 +44,7 @@ C:\Windows\Temp\zabbix_script.log (на каждом ПК)
 Храните скрипт в защищенном месте
 После использования рассмотрите возможность отзыва или ограничения прав использованного API токена, регулярно меняйте токен во избежании утечки
 
-### Автоматизация развертывания в домене
+#### Автоматизация развертывания в домене
 Создаем GPO на сервере AD, назначем нужные OU и прочие права. Создаем Сценарий запука со следующими параметрами:
 Имя сценария: %windir%\System32\WindowsPowerShell\v1.0\powershell.exe
 Параметры сценария: -Noninteractive -ExecutionPolicy Bypass -Noprofile -file "ваш путь до скрипта"
