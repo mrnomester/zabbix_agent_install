@@ -14,8 +14,7 @@
 
 ## Параметры конфигурации
 Перед запуском скрипта проверьте следующие параметры в начале файла:
-ZBX_SERVER = "" (IP-адрес сервера Zabbix)
-
+- ZBX_SERVER = "" (IP-адрес сервера Zabbix)
 - ZBX_API = "http://$ZBX_SERVER/zabbix/api_jsonrpc.php" (URL API Zabbix)
 - ZBX_TOKEN = "" (API токен)
 - ZBX_TEMPLATE_NAME = "Windows by Zabbix agent" (Имя шаблона, можно оставить так)
