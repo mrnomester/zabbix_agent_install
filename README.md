@@ -51,10 +51,7 @@ $ZBX_HOSTGRP_NAME = "Unassigned" # Или ваша группа хостов
    - Policies → Windows Settings → Scripts → Startup  
    - Добавьте скрипт:  
      - **Script**: `%windir%\System32\WindowsPowerShell\v1.0\powershell.exe`  
-     - **Parameters**:  
-       ```
-       -Noninteractive -ExecutionPolicy Bypass -Noprofile -file "\\сетевой_путь\agent+host_create.ps1"
-       ```
+     - **Parameters**: `-Noninteractive -ExecutionPolicy Bypass -Noprofile -file "\\сетевой_путь\agent+host_create.ps1"`
 
 3. **Требования к клиентам**:  
    - Доступ к сетевому ресурсу с MSI-файлом  
