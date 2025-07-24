@@ -1,4 +1,4 @@
-### zabbix_agent_install
+## zabbix_agent_install
 **Назначение**: Автоматическая установка Zabbix Agent и регистрация Windows-хостов в системе мониторинга Zabbix через API.  
 **Функционал**:  
 - Установка агента из MSI-пакета  
